@@ -18,7 +18,7 @@ const LoginSignupHeader = () => {
 
                 <div className={`col-md-3 col-sm-3 col-3 ${styles.rightHeader}`}>
 
-                    <Link to="/" style={{color:"black", textDecoration:"none", fontSize:11, marginRight:10}}><img src={home} title="login" alt="login"/></Link>
+                    <Link to="/" style={{color:"black", textDecoration:"none", fontSize:11, marginRight:10}}><img src={home} title="main page" alt="login"/></Link>
 
                 </div>
 

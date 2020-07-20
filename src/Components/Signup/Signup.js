@@ -19,7 +19,7 @@ const Signup = () => {
             <LoginSignupHeader />
             <div className={styles.signupBox}>
                 <div style={{marginTop:15, fontWeight:"bold"}}>Sign Up</div>
-                <div><img src={signupBoxLogo} alt="signup"/></div>
+                <div><img src={signupBoxLogo} alt="signup" style={{marginLeft:4}}/></div>
                 <textarea className={styles.signupBoxName} placeholder="Name & Surname" onChange={(e) => setName(e.target.value)}></textarea>
 
                 <textarea className={styles.signupBoxEmail} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></textarea>

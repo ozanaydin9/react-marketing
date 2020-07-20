@@ -88,6 +88,7 @@ hr.horizontalLine {
     font-size: 13px;
     font-weight: bolder;
     margin-top: 10px;
+    outline: none;
 }
 
 .signupBoxButton:hover {
