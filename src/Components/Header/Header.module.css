@@ -1,0 +1,83 @@
+.headerMain {
+    height: 90px;
+    width: 100%;
+    position: relative;
+}
+
+.headerLogo {
+    width: 140px;
+    height: 50px;
+    align-items: center;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 10px;
+    float: left;
+    display: inline-flex;
+    justify-content: center;
+    color: #3C3C3C;
+}
+
+.headerSearch {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    font-size: 12px;
+}
+
+.headerSearchTextArea {
+    height: 100%;
+    border-radius: 10px;
+    width: 90%;
+    padding:1%;
+    float: left;
+    border:none;
+    resize: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.headerSearchIcon{
+    height: 100%;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.rowHeader {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.leftHeader {
+
+}
+
+.middleHeader {
+
+}
+
+.rightHeader {
+
+}
+
+.headerHorizontalLine{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+hr.horizontalLine {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(224, 224, 224, 0.75), rgba(0, 0, 0, 0));
+    margin: 0;
+
+}
