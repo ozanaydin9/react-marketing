@@ -5,7 +5,7 @@
 }
 
 .rowContainerHeaderBreadcrumbAndFilterBox {
-
+    padding-left: 15px;
     height: 75px;
     align-items: center;
     text-align: center;
@@ -34,9 +34,10 @@ ul.breadcrumb li {
     display: inline;
     font-size: 13px;
 }
+
 ul.breadcrumb li+li:before {
     padding: 8px;
-    color: black;
+    color: #828282;
     content: ">\00a0";
 }
 ul.breadcrumb li a {
@@ -45,7 +46,6 @@ ul.breadcrumb li a {
 }
 ul.breadcrumb li a:hover {
     color: #828282;
-    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -69,6 +69,7 @@ ul.breadcrumb li a:hover {
 
 .homeContentWrapper {
     height: 100%;
+
 }
 
 .rowHomeContentWrapper {
@@ -78,11 +79,10 @@ ul.breadcrumb li a:hover {
 .leftHomeContentWrapper{
 
     border-right: 1px solid #E0E0E0;
-    height: 100%;
 }
 
 .middleHomeContentWrapper{
-
+    padding-right: 0px !important;
 
 }
 
@@ -95,8 +95,78 @@ ul.breadcrumb li a:hover {
 .homeContentWrapperContentBox {
     height: 100%;
     width: 100%;
-    border: 2px solid #E0E0E0;
+    border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 10px;
 
 }
+
+
+
+
+.leftHomeContentWrapperTop{
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    min-height: 60px;
+
+    padding: 10px 15px;
+}
+
+.leftHomeContentWrapperTopBrand{
+    font-size: 13px;
+    color: #818181;
+}
+
+.leftHomeContentWrapperTopBrandDescription{
+    font-size: 8px;
+    color: #818181;
+}
+
+.leftHomeContentWrapperTopBrandCategories{
+    font-size: 11px;
+    color: #818181;
+    padding-top: 10px;
+}
+
+.leftHomeContentWrapperTop a  {
+    text-decoration: none;
+    font-size: 11px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.leftHomeContentWrapperTop a:hover, .leftHomeContentWrapperTopBrandCategories:hover {
+    color: #747474;
+}
+
+
+.leftHomeContentWrapperMiddle{
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    min-height: 60px;
+    font-size: 13px;
+    color: #818181;
+    padding: 10px 15px;
+}
+
+.leftHomeContentWrapperTop + .leftHomeContentWrapperMiddle {
+    margin-top: 15px;
+}
+
+.leftHomeContentWrapperMiddle + .leftHomeContentWrapperMiddle {
+    margin-top: 15px;
+}
+
+.leftHomeContentWrapperUl{
+text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+

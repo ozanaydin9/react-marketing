@@ -1,0 +1,174 @@
+.rowContainerHeaderBreadcrumbAndFilterBox {
+    padding-left: 15px;
+    height: 75px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.containerHeaderBreadcrumbAndFilterBox {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 45px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+ul.breadcrumb {
+    padding: 10px 8px;
+    list-style: none;
+    float: left;
+    background-color: transparent;
+    margin: 0px;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 13px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #828282;
+    content: ">\00a0";
+}
+ul.breadcrumb li a {
+    color: #828282;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #828282;
+    text-decoration: underline;
+}
+.selectBox {
+    width: 140px;
+    height: 28px;
+    float: right;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 8px;
+    margin-right: 8px;
+    color: #828282;
+    font-size: 12px;
+}
+
+.productContentWrapper {
+    height: 100%;
+    padding-right: 0px !important;
+}
+
+.rowProductContentWrapper {
+    height: 100%;
+}
+
+.leftProductContentWrapper{
+    padding-right: 0px !important;
+}
+.leftProductContentWrapperContentBox{
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 8px;
+}
+.rightHomeContentWrapper{
+    padding-right: 0px !important;
+
+}
+
+.rightProductContentWrapper{
+    padding-right: 0px;
+}
+
+.rightProductContentWrapperContentBox{
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+.rowProductOtherProducts {
+    height: 100%;
+}
+
+.otherProductsContentWrapper{
+
+}
+
+.otherProductsContentWrapperContentBox{
+    height: 100%;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 400px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: relative;
+}
+
+.rowProductSpecifications {
+    height: 100%;
+}
+
+.rowProductSpecificationsContentWrapper{
+
+}
+
+.rowProductSpecificationsContentWrapperContentBox{
+    height: 100%;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 18px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: relative;
+}
+
+.rowProductComments {
+    height: 100%;
+}
+
+.rowProductCommentsContentWrapper{
+
+}
+
+.rowProductCommentsContentWrapperContentBox{
+    height: 100%;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-top: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+.leftProductContentWrapperContentBoxImageArea{
+    height: 75%;
+    padding: 20px;
+}

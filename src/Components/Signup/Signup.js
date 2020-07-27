@@ -11,23 +11,23 @@ const Signup = () => {
     const [email, setEmail] = useState([]);
     const [password, setPassword] = useState([]);
     const [passwordAgain, setPasswordAgain] = useState([]);
-    const [isChecked, setIsChecked] = useState([false]);
+    const [isChecked, setIsChecked] = useState(false);
 
 
     return (
         <div className={`container-fluid ${styles.signupMain}`}>
             <LoginSignupHeader />
             <div className={styles.signupBox}>
-                <div style={{marginTop:15, fontWeight:"bold"}}>Sign Up</div>
+                <div style={{marginTop:25, fontWeight:"bold"}}>Sign Up</div>
                 <div><img src={signupBoxLogo} alt="signup" style={{marginLeft:4}}/></div>
-                <textarea className={styles.signupBoxName} placeholder="Name & Surname" onChange={(e) => setName(e.target.value)}></textarea>
+                <input className={styles.signupBoxName} maxLength={30} placeholder="Name & Surname" onChange={(e) => setName(e.target.value)}></input>
 
-                <textarea className={styles.signupBoxEmail} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></textarea>
+                <input className={styles.signupBoxEmail} maxLength={30} type="email" maxLength={30} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input>
 
-                <textarea className={styles.signupBoxPassword} placeholder="Password" onChange={(e) => setPassword(e.target.value)}></textarea>
-                <textarea className={styles.signupBoxPassword} placeholder="Password Again" onChange={(e) => setPasswordAgain(e.target.value)}></textarea>
+                <input className={styles.signupBoxPassword} maxLength={20} type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input>
+                <input className={styles.signupBoxPassword} maxLength={20} type="password" placeholder="Password Again" onChange={(e) => setPasswordAgain(e.target.value)}></input>
 
-                <div>
+                <div style={{marginTop:10}}>
                     <input onChange={() => setIsChecked(!isChecked)}  type="checkbox" checked={isChecked} style={{verticalAlign: "middle"}} />
                     {console.log(isChecked)}
                     <label style={{color:"#BDBDBD", textDecoration:"none", fontSize:11}}>Accept Terms and Conditions</label>

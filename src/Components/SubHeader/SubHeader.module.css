@@ -9,7 +9,6 @@
     align-items: center;
     text-align: center;
     position: relative;
-
 }
 
 
@@ -26,4 +25,68 @@ hr.horizontalLine {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(224, 224, 224, 0.75), rgba(0, 0, 0, 0));
     margin: 0;
+}
+
+
+
+
+.navbar {
+    overflow: hidden;
+    margin: auto;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #828282;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #828282;
+    padding: 0px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    float: left;
+    left: 0;
+    background-color: #f4f4f4;
+    min-width: 1070px;
+    min-height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdowncontent a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdowncontent {
+    display: block;
 }

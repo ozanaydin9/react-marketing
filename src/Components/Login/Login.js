@@ -16,12 +16,12 @@ const Login = () => {
         <LoginSignupHeader />
 
         <div className={styles.loginBox}>
-            <div style={{marginTop:15, fontWeight:"bold"}}>Login</div>
+            <div style={{marginTop:25, fontWeight:"bold"}}>Login</div>
             <div><img src={loginBoxLogo} alt="login" style={{marginRight:4}}/></div>
 
-            <textarea className={styles.loginBoxEmail} placeholder="Email" onChange={(e) => setEmail(e.target.value)}></textarea>
+            <input className={styles.loginBoxEmail} maxLength={30} type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}></input>
 
-            <textarea className={styles.loginBoxPassword} placeholder="Password" onChange={(e) => setPassword(e.target.value)}></textarea>
+            <input className={styles.loginBoxPassword} maxLength={20} type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}></input>
 
             <div><hr className={styles.horizontalLine}/></div>
 

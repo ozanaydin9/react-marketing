@@ -3,6 +3,7 @@ import styles from './Header.module.css';
 import {Link} from "react-router-dom";
 import userLogo from "../../images/userLogo.svg";
 import home from "../../images/home.svg";
+import ozanaydin from "../../images/ozanaydin.svg";
 
 
 const LoginSignupHeader = () => {
@@ -10,7 +11,7 @@ const LoginSignupHeader = () => {
         <div className={`container-fluid ${styles.headerMain}`}>
             <div className={`row ${styles.rowHeader}`}>
                 <div className={`col-md-3 col-sm-3 col-3 ${styles.leftHeader}`}>
-                    <Link to="/"><span className={styles.headerLogo}>Logo Place</span></Link>
+                    <Link to="/"><span className={styles.headerLogo}><img src={ozanaydin} title="ozanaydin"/></span></Link>
                 </div>
                 <div className={`col-md-6 col-sm-6 col-6 ${styles.middleHeader}`}>
 
@@ -18,7 +19,7 @@ const LoginSignupHeader = () => {
 
                 <div className={`col-md-3 col-sm-3 col-3 ${styles.rightHeader}`}>
 
-                    <Link to="/" style={{color:"black", textDecoration:"none", fontSize:11, marginRight:10}}><img src={home} title="main page" alt="login"/></Link>
+                    <Link to="/" style={{color:"black", textDecoration:"none", fontSize:11, marginRight:10}}><img src={home} title="main page" alt="login"/><figcaption style={{display:"inline-block", verticalAlign:"bottom", paddingLeft:2}}>Home</figcaption></Link>
 
                 </div>
 
